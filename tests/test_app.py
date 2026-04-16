@@ -1,5 +1,9 @@
-from app import saudacao
+from app import saudacao, despedida
 
 
 def test_saudacao():
-    assert saudacao("Antony") == "Olá, Antony!  Bem-vindo ao projeto de DevOps com Python."
+    assert saudacao("Antony") == "Olá, Antony! Bem-vindo ao projeto de DevOps com Python."
+
+
+def test_despedida():
+    assert despedida("Antony") == "Até logo, Antony!"
